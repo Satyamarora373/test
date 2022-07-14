@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import { Strategy } from 'passport-github';
 import { PassportStrategy } from '@nestjs/passport';
 import { Injectable } from '@nestjs/common';

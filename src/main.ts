@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ConfigModule } from '@nestjs/config';
@@ -5,7 +6,7 @@ import { NestExpressApplication } from '@nestjs/platform-express';
 import { join } from 'path';
 import * as session from 'express-session';
 import * as passport from 'passport';
-require('dotenv').config();
+
 ConfigModule.forRoot(); 
 
 export async function bootstrap() {

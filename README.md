@@ -4,33 +4,33 @@ A Github OAuth App that creates new repository in your Github Account.
 
 - Click on Login with Github Button
 
-![Screenshot](./screenshots/loginpage.PNG)  
+![Screenshot](./screenshots/loginPage.PNG)  
 
 - Login to the app using your Github account & grant repository access.
 
-![Screenshot](./screenshots/github.PNG)
+![Screenshot](./screenshots/Request.PNG)
 
 - After logging in, specify name & click on Create Repository Button to create a new repository in your account.
 
-![Screenshot](./screenshots/homepage.PNG)
+![Screenshot](./screenshots/HomePage.PNG)
 
 - On successful creation of Repository, following response is obtained.
 
-![Screenshot](./screenshots/repocreatesuccess.PNG)
+![Screenshot](./screenshots/Success.PNG)
 
 - If Repository Creation fails, response will contain the error message.
 
-![Screenshot](./screenshots/repocreatefailed.PNG)
+![Screenshot](./screenshots/Failed.PNG)
 
 
 ## Installation
 
 ```bash
 #Clone Repository
-$ git clone https://github.com/sameep-sehgal/truefoundary-assignment.git
+$ git clone https://github.com/Satyamarora373/test.git
 
 #Change Directory to project
-$ cd truefoundary-assignment
+$ cd test
 
 #Install dependencies
 $ npm install
@@ -49,9 +49,9 @@ $ npm run start:dev
 
 
 ## Key Features of the app
-- User logs in to the app using their Github Account. The Github OAuth flow is handled using Passport library.
-- After successful completion of OAuth flow, Github returns an Access Token which the application can use to make request on behalf of the user {Create new repository in user's Github Account}.
-- This token is stored in SQLite DB along with some other user info like username & profile URL. Used Sequelize as ORM for DB.
-- Session-Based Authentication is used. User sessions are also stored in SQLite database at the backend.
-- Backend generates a cookie on successful login & returns to the user. This cookie can be used to identify user on subsquent requests.
-- User Session & the cookie expires in 30 days. Sessions are removed from the DB when they expire or the user logs out.
+- Using their Github account, the user logs into the app. The Passport library will manage the Github OAuth flow.
+- Github returns an Access Token when the OAuth flow has been successfully completed, which the application can use to request that the user create a new repository in their Github account.
+- Along with other user information like the username and profile URL, this token is kept in a SQLite database. Used DB sequelization as ORM
+- It makes advantage of session-based authentication. Additionally, user sessions are kept in the backend SQLite database.
+- After a successful login, the backend creates a cookie and sends it back to the user. On subsequent queries, this cookie may be used to recognise the user.
+- Sessions are removed from the DB when they expire or the user logs out.

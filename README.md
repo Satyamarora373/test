@@ -4,23 +4,23 @@ A Github OAuth App that creates new repository in your Github Account.
 
 - Click on Login with Github Button
 
-![Screenshot](./screenshots/loginPage.PNG)  
+![Screenshot](./screenshots/LoginPage.png)  
 
 - Login to the app using your Github account & grant repository access.
 
-![Screenshot](./screenshots/Request.PNG)
+![Screenshot](./screenshots/Request.png)
 
 - After logging in, specify name & click on Create Repository Button to create a new repository in your account.
 
-![Screenshot](./screenshots/HomePage.PNG)
+![Screenshot](./screenshots/HomePage.png)
 
 - On successful creation of Repository, following response is obtained.
 
-![Screenshot](./screenshots/Success.PNG)
+![Screenshot](./screenshots/Success.png)
 
 - If Repository Creation fails, response will contain the error message.
 
-![Screenshot](./screenshots/Failed.PNG)
+![Screenshot](./screenshots/Failed.png)
 
 
 ## Installation

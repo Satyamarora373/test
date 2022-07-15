@@ -9,7 +9,7 @@ export class GithubStrategy extends PassportStrategy(Strategy, 'github') {
     super({
       clientID: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
-      callbackURL: "https://satyamsdajfdnamf.herokuapp.com/auth/github/callback",
+      callbackURL: "https://github-nestjs-assignment.herokuapp.com/auth/github/callback",
       scope: ['repo']
     });
   }
